@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .block {
+            height: 100px;
+        }
+        .blue { background-color: #007bff; }
+        .purple { background-color: #6f42c1; }
+        .red { background-color: #dc3545; }
+        .mb-3 { margin-bottom: 15px !important; }
+        .mr-3 { margin-right: 15px !important; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Desktop Layout -->
+        <div class="d-none d-md-block">
+            <div class="row mb-3">
+                <div class="col-12 block blue">Header</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 block blue mr-3">Block 1</div>
+                <div class="col-4 block blue mr-3">Block 2</div>
+                <div class="col-4 block blue">Block 3</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6 block purple mr-3">Block 4</div>
+                <div class="col-6 block purple">Block 5</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 block red mr-3">Block 6</div>
+                <div class="col-4 block red mr-3">Block 7</div>
+                <div class="col-4 block red">Block 8</div>
+            </div>
+        </div>
+        <!-- Mobile Layout -->
+        <div class="d-md-none">
+            <div class="row mb-3">
+                <div class="col-12 block blue">Header</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 block blue mr-3">Block 1</div>
+                <div class="col-12 block blue mr-3">Block 2</div>
+                <div class="col-12 block blue">Block 3</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 block purple mr-3">Block 4</div>
+                <div class="col-12 block purple mr-3">Block 5</div>
+                <div class="col-12 block purple">Block 6</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-4 block red mr-3">Block 7</div>
+                <div class="col-4 block red mr-3">Block 8</div>
+                <div class="col-4 block red">Block 9</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
