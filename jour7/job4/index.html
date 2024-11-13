@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account creation</title>
+    <!-- CDN Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with navigation, Materialize classes applied -->
+    <header>
+        <nav class="blue darken-3">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Logo</a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html">Inscription</a></li>
+                    <li><a href="index.html">Connexion</a></li>
+                    <li><a href="index.html">Rechercher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Form section -->
+    <section class="container">
+        <h2>Création de compte</h2>
+        <form action="#" method="POST">
+            <!-- Civilité -->
+            <p>Choisissez votre civilité :</p>
+            <p>
+                <label>
+                    <input type="radio" id="monsieur" name="civilite" value="Monsieur" required>
+                    <span>Monsieur</span>
+                </label>
+                <label>
+                    <input type="radio" id="madame" name="civilite" value="Madame">
+                    <span>Madame</span>
+                </label>
+            </p>
+
+            <!-- Champ Prénom -->
+            <div class="input-field">
+                <i class="material-icons prefix">person</i>
+                <input type="text" id="prenom" name="prenom" required>
+                <label for="prenom">Prénom</label>
+            </div>
+
+            <!-- Champ Nom -->
+            <div class="input-field">
+                <i class="material-icons prefix">person_outline</i>
+                <input type="text" id="nom" name="nom" required>
+                <label for="nom">Nom</label>
+            </div>
+
+            <!-- Champ Adresse -->
+            <div class="input-field">
+                <i class="material-icons prefix">home</i>
+                <input type="text" id="addresse" name="addresse" required>
+                <label for="addresse">Adresse</label>
+            </div>
+
+            <!-- Champ Email -->
+            <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email" name="email" required>
+                <label for="email">Email</label>
+            </div>
+
+            <!-- Champ Mot de passe -->
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input type="password" id="motdepasse" name="motdepasse" required>
+                <label for="motdepasse">Mot de passe</label>
+            </div>
+
+            <!-- Champ Confirmer mot de passe -->
+            <div class="input-field">
+                <i class="material-icons prefix">lock_outline</i>
+                <input type="password" id="confirmermotdepasse" name="confirmermotdepasse" required>
+                <label for="confirmermotdepasse">Confirmer mot de passe</label>
+            </div>
+
+            <!-- Passions -->
+            <fieldset>
+                <legend>Choisissez vos passions :</legend>
+                <p>
+                    <label>
+                        <input type="checkbox" id="informatique" name="passions[]" value="Informatique">
+                        <span>Informatique</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" id="voyages" name="passions[]" value="Voyages">
+                        <span>Voyages</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" id="sport" name="passions[]" value="Sport">
+                        <span>Sport</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" id="lecture" name="passions[]" value="Lecture">
+                        <span>Lecture</span>
+                    </label>
+                </p>
+            </fieldset>
+
+            <!-- Bouton de soumission -->
+            <button type="submit" class="btn waves-effect waves-light blue">Valider
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer blue-grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">À propos</h5>
+                    <p class="grey-text text-lighten-4">Ceci est un exemple de footer coloré avec Materialize.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Liens</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Lien 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Lien 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Lien 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2024 Mon Site
+            </div>
+        </div>
+    </footer>
+
+    <!-- CDN Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
