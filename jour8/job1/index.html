@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de compte</title>
+</head>
+<body>
+
+    <!-- Header avec navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section pour le formulaire de création de compte -->
+    <section>
+        <h2>Création de compte</h2>
+        <form action="#" method="POST">
+            <!-- Civilité -->
+            <label>Civilité :</label><br>
+            <input type="radio" id="monsieur" name="civilite" value="monsieur">
+            <label for="monsieur">Monsieur</label>
+            <input type="radio" id="madame" name="civilite" value="madame">
+            <label for="madame">Madame</label><br><br>
+
+            <!-- Prénom -->
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+
+            <!-- Nom -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <!-- Adresse -->
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required><br><br>
+
+            <!-- Email -->
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Mot de passe -->
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Validation du mot de passe -->
+            <label for="confirm_password">Confirmez le mot de passe :</label>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+            <!-- Passions -->
+            <label>Vos passions :</label><br>
+            <input type="checkbox" id="informatique" name="passions" value="informatique">
+            <label for="informatique">Informatique</label>
+            <input type="checkbox" id="voyages" name="passions" value="voyages">
+            <label for="voyages">Voyages</label>
+            <input type="checkbox" id="sport" name="passions" value="sport">
+            <label for="sport">Sport</label>
+            <input type="checkbox" id="lecture" name="passions" value="lecture">
+            <label for="lecture">Lecture</label><br><br>
+
+            <!-- Bouton de soumission -->
+            <button type="submit">Valider</button>
+        </form>
+    </section>
+
+    <!-- Footer avec liens -->
+    <footer>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Inscription</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="index.html">Rechercher</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

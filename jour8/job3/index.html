@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de compte</title>
+    <!-- CDN Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header avec navigation -->
+    <header class="bg-blue-500 p-4">
+        <nav class="container mx-auto">
+            <ul class="flex justify-around text-white">
+                <li><a href="index.html" class="hover:underline">Accueil</a></li>
+                <li><a href="index.html" class="hover:underline">Inscription</a></li>
+                <li><a href="index.html" class="hover:underline">Connexion</a></li>
+                <li><a href="index.html" class="hover:underline">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Section pour le formulaire de création de compte -->
+    <section class="container mx-auto p-8">
+        <h2 class="text-2xl font-semibold mb-6">Création de compte</h2>
+        <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+            <!-- Civilité -->
+            <label class="block mb-2 font-medium">Civilité :</label>
+            <div class="mb-4">
+                <input type="radio" id="monsieur" name="civilite" value="monsieur" class="mr-1">
+                <label for="monsieur" class="mr-4">Monsieur</label>
+                <input type="radio" id="madame" name="civilite" value="madame" class="mr-1">
+                <label for="madame">Madame</label>
+            </div>
+
+            <!-- Prénom -->
+            <label for="prenom" class="block mb-2 font-medium">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required class="border rounded w-full p-2 mb-4">
+
+            <!-- Nom -->
+            <label for="nom" class="block mb-2 font-medium">Nom :</label>
+            <input type="text" id="nom" name="nom" required class="border rounded w-full p-2 mb-4">
+
+            <!-- Adresse -->
+            <label for="adresse" class="block mb-2 font-medium">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required class="border rounded w-full p-2 mb-4">
+
+            <!-- Email -->
+            <label for="email" class="block mb-2 font-medium">Email :</label>
+            <input type="email" id="email" name="email" required class="border rounded w-full p-2 mb-4">
+
+            <!-- Mot de passe -->
+            <label for="password" class="block mb-2 font-medium">Mot de passe :</label>
+            <input type="password" id="password" name="password" required class="border rounded w-full p-2 mb-4">
+
+            <!-- Validation du mot de passe -->
+            <label for="confirm_password" class="block mb-2 font-medium">Confirmez le mot de passe :</label>
+            <input type="password" id="confirm_password" name="confirm_password" required class="border rounded w-full p-2 mb-4">
+
+            <!-- Passions -->
+            <label class="block mb-2 font-medium">Vos passions :</label>
+            <div class="mb-4">
+                <input type="checkbox" id="informatique" name="passions" value="informatique" class="mr-1">
+                <label for="informatique" class="mr-4">Informatique</label>
+                <input type="checkbox" id="voyages" name="passions" value="voyages" class="mr-1">
+                <label for="voyages" class="mr-4">Voyages</label>
+                <input type="checkbox" id="sport" name="passions" value="sport" class="mr-1">
+                <label for="sport" class="mr-4">Sport</label>
+                <input type="checkbox" id="lecture" name="passions" value="lecture" class="mr-1">
+                <label for="lecture">Lecture</label>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Valider</button>
+        </form>
+    </section>
+
+    <!-- Footer avec liens stylisés avec Tailwind -->
+    <footer class="bg-blue-500 p-4 mt-8">
+        <div class="container mx-auto">
+            <ul class="flex justify-around text-white">
+                <li><a href="index.html" class="hover:underline">Accueil</a></li>
+                <li><a href="index.html" class="hover:underline">Inscription</a></li>
+                <li><a href="index.html" class="hover:underline">Connexion</a></li>
+                <li><a href="index.html" class="hover:underline">Rechercher</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
